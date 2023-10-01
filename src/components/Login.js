@@ -32,14 +32,14 @@ const Login = () => {
   }, []);
   const cursor = document.querySelector('.cursor');
   document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    if(cursor!==null) cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
   })
 
   document.addEventListener('click', () => {
-    cursor.classList.add("expand");
+    if(cursor!==null) cursor.classList.add("expand");
 
     setTimeout(() => {
-      cursor.classList.remove("expand");
+      if(cursor!==null) cursor.classList.remove("expand");
     }, 500)
   });
   const dispatch = useDispatch();
@@ -89,7 +89,7 @@ const Login = () => {
 
   return (
     <div className='Logindiv'>
-      {/* <div className="cursor"></div> */}
+      <div className="cursor"></div>
       <Fade top>
 
         {
