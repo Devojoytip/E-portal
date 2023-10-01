@@ -1,7 +1,17 @@
 .App {
-  text-align: center;
-}
+  
 
+}
+.logo{
+  /* height: 40vmin; */
+  pointer-events: none;
+  justify-self: center;
+  width: 75%;
+  /* z-index: 100; */
+  /* position: realt/ve; */
+  /* top:-10px; */
+  /* margin-top: 10px; */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
