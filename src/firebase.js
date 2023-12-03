@@ -1,6 +1,3 @@
-import { initializeApp} from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
-// import {firebase} from 'firebase/app';
 import firebase from 'firebase';
 import 'firebase/firestore';
 const firebaseConfig = {
@@ -11,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "eportal-722f8.appspot.com",
   messagingSenderId: "271592625211",
   appId: "1:271592625211:web:91a1842eff15934573781e",
-  measurementId: "G-MDY644RS6X"
+  measurementId: "G-MDY644RS6X" 
   };
 
 // const firebaseApp = firebase.initializeApp(fireba)

@@ -32,14 +32,14 @@ const Login = () => {
   }, []);
   const cursor = document.querySelector('.cursor');
   document.addEventListener('mousemove', e => {
-    if(cursor!==null) cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    if (cursor !== null) cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
   })
 
   document.addEventListener('click', () => {
-    if(cursor!==null) cursor.classList.add("expand");
+    if (cursor !== null) cursor.classList.add("expand");
 
     setTimeout(() => {
-      if(cursor!==null) cursor.classList.remove("expand");
+      if (cursor !== null) cursor.classList.remove("expand");
     }, 500)
   });
   const dispatch = useDispatch();
@@ -54,7 +54,8 @@ const Login = () => {
       }
     })
   }, [userName]);
-  const handle = () => {
+  const handle = () => 
+  {
     if (!userName) {
       auth.signInWithPopup(provider).then((result) => {
         setUser(result.user);

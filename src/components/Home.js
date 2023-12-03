@@ -3,8 +3,6 @@ import React from 'react'
 import ImgSlider from './ImgSlider'
 import Viewers from "./Viewers"
 import Header from "./Header";
-import Particles1 from "./Particles1";
-import vid from "./images/back-video.mp4"
 import './Home.css'
 const Home = () => {
  
